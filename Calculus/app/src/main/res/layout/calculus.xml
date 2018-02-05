@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/addition">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/divide"
+        android:layout_below="@+id/divide"
+        android:layout_marginTop="21dp"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/addition"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:layout_marginStart="22dp"
+        android:layout_alignBaseline="@+id/divide"
+        android:layout_alignBottom="@+id/divide"
+        android:layout_alignStart="@+id/nb2" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="21dp"
+        android:text="/"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp" />
+
+    <EditText
+        android:id="@+id/nb1"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="69dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Media" />
+
+    <EditText
+        android:id="@+id/nb2"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@+id/nb1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/nb1"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Media" />
+
+    <Button
+        android:id="@+id/negate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/multiply"
+        android:layout_alignBottom="@+id/multiply"
+        android:layout_alignStart="@+id/addition"
+        android:text="-" />
+</RelativeLayout>
